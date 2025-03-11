@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Self Love Circle offers coaching services to help individuals grow in confidence and self-love.">
+    <meta name="keywords" content="self-love, confidence coaching, personal growth, mindset transformation">
+    <meta name="author" content="Kari Leigh Hollin">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Love Circle | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Self Love Circle Logo">
+        <h1 id="homeTitle">Self Love Circle</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <span id="quoteLabel">Quote of the Day:</span>
+            <p id="quoteDisplay"></p>
+            <p id="quoteAuthor"></p>
+            <h2>Achieve Your Personal & Professional Growth</h2>
+            <p>Guidance, resources, and coaching services to help you reach your goals.</p>
+            <a href="services.html" class="btn">Get Started</a>
+        </section>
+
+        <section id="testimonials">
+            <div class="testimonial">
+                <p>"Self Love Circle helped me regain my confidence!"</p>
+                <h4>- Client A</h4>
+            </div>
+            <div class="testimonial">
+                <p>"This program changed my life for the better!"</p>
+                <h4>- Client B</h4>
+            </div>
+            <div class="testimonial">
+                <p>"I now embrace who I am with self-love and confidence!"</p>
+                <h4>- Client C</h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Self Love Circle | All Rights Reserved</p>
+    </footer>
+    
+    <script>
+        // Quote of the Day Feature
+        const quotes = [
+            { text: "Believe in yourself and all that you are", author: "Unknown" },
+            { text: "You are enough just as you are", author: "Meghan Markle" },
+            { text: "Confidence is not 'they will like me.' Confidence is 'I’ll be fine if they don’t.'", author: "Christina Grimmie" },
+            { text: "Your value doesn’t decrease based on someone’s inability to see your worth", author: "Zig Ziglar" }
+        ];
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const selectedQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quoteDisplay").innerHTML = `<span style="color: pink; font-style: italic;">"${selectedQuote.text}"</span>`;
+            document.getElementById("quoteAuthor").innerHTML = `<span style="color: pink; font-style: italic;">- ${selectedQuote.author}</span>`;
+        });
+
+        // Success Story Slider
+        let slideIndex = 0;
+        function showNextSlide() {
+            const slides = document.querySelectorAll(".testimonial");
+            slides[slideIndex].style.display = "none";
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].style.display = "block";
+        }
+        setInterval(showNextSlide, 5000);
+    </script>
+</body>
+</html>

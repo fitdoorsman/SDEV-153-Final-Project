@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Self Love Circle offers coaching services to help individuals grow in confidence and self-love.">
+    <meta name="keywords" content="self-love, confidence coaching, personal growth, mindset transformation">
+    <meta name="author" content="Kari Leigh Hollin">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Love Circle | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Self-Love Circle Logo">
+        <h1>Contact & Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-image">
+            <img src="get_in_touch.png" alt="Get in Touch" class="responsive-image">
+        </div>
+
+        <div class="contact-form-container">
+            <h2>Contact Me</h2>
+            <form id="newsletterForm">
+                <label for="newsletter-email">Subscribe to our Newsletter:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <form id="contactForm" action="contact-form-handler.php" method="post" autocomplete="off">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Self Love Circle | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Thank you for subscribing!");
+            });
+
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Thank you! Your message has been sent.");
+            });
+        });
+    </script>
+</body>
+</html>

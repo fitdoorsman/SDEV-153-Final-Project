@@ -1,0 +1,255 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Reset */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Apply elegant fonts */
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Main Headings (Centered) */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Section Headings (Left-aligned) */
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #ffb6c1; /* Light Pink */
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ul li a {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+    text-decoration: underline;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: #ffe6e2;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Buttons */
+.btn, button, input[type="submit"], input[type="button"] {
+    background-color: #ffb6c1;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #ff92a1;
+}
+
+/* Footer */
+footer {
+    background-color: #ffb6c1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+}
+
+/* Quote of the Day Styling */
+#quoteLabel {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#quoteDisplay {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ff69b4;
+    text-align: center;
+    margin-top: 3px;
+}
+
+#quoteAuthor {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #ff69b4;
+    text-align: center;
+    display: block;
+}
+
+/* Ensure "Self Love Circle" on Home Page Matches the Logo */
+#homeTitle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* About Page Image Styling */
+.about-image {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Section */
+.testimonial {
+    display: none;
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}
+
+#testimonials {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffe6e2;
+    border-radius: 10px;
+}
+
+/* Responsive Logo Resizing */
+header img {
+    max-width: 250px; /* Increased logo size */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Adjust Logo Size for Different Screens */
+@media screen and (max-width: 1024px) {
+    header img {
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header img {
+        max-width: 190px;
+    }
+}
+
+/* === TABLE STYLING === */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.styled-table thead {
+    background-color: #ffb6c1;
+    color: white;
+    font-weight: bold;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    .styled-table th, .styled-table td {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
+/* === IMAGE STYLING FOR BLOG & CONTACT PAGES === */
+.responsive-image {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centers the image */
+}
+
+/* Adjust size for smaller screens */
+@media screen and (max-width: 768px) {
+    .responsive-image {
+        max-width: 70%;
+    }
+}
+
+/* Autofill Styling (Optional, remove if needed) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    background-color: transparent !important;
+    color: #000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
